@@ -18,7 +18,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🅄🄿🄳🄰🅃🄴🅂', url='https://t.me/+veUIdIW2CQ5mOGU5')
+                InlineKeyboardButton('🅄🄿🄳🄰🅃🄴🅂', url='https://t.me/mallmovieup')
             ],
             [
                 InlineKeyboardButton('🄷🄴🄻🄿', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -37,12 +37,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚚ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ⚚', url='https://t.me/RedFoxx_Bot?startgroup=true')
+            InlineKeyboardButton('⚜️ 𝐉𝐎𝐈𝐍 𝐌𝐄 𝐓𝐎 𝐁𝐎𝐓 𝐆𝐑𝐎𝐔𝐏 ⚜️', url='https://t.me/mallu_movie_search')
             ],[
-            InlineKeyboardButton('movie', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('𝐂𝐡jkh', url='https://t.me/+veUIdIW2CQ5mOGU5')
+            InlineKeyboardButton('𝐑𝐄𝐋𝐄𝐀𝐒𝐄', url='https://t.me/+RnQCwI5msYdjZTZl'),
+            InlineKeyboardButton('𝐂𝐇𝐄𝐍𝐍𝐀𝐈', url='https://t.me/mallmovieup')
             ],[
-            InlineKeyboardButton('𝐇𝐞𝐥𝐩', callback_data='help'),
+            InlineKeyboardButton('𝙒𝙀𝘽 𝙎𝙀𝙍𝙄𝙀𝙎', url='https://t.me/malluwebseriesd'),
             InlineKeyboardButton('𝐀𝐛𝐨𝐮𝐭', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -78,12 +78,12 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⚚ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ⚚', url='https://t.me/RedFoxx_Bot?startgroup=true')
+            InlineKeyboardButton('⚜️ 𝐉𝐎𝐈𝐍 𝐌𝐄 𝐓𝐎 𝐁𝐎𝐓 𝐆𝐑𝐎𝐔𝐏 ⚜️', url='https://t.me/mallu_movie_search')
             ],[
-            InlineKeyboardButton('𝐒𝐞𝐚𝐫𝐜𝐡', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url='https://t.me/+veUIdIW2CQ5mOGU5')
+            InlineKeyboardButton('𝐑𝐄𝐋𝐄𝐀𝐒𝐄', url='https://t.me/+RnQCwI5msYdjZTZl'),
+            InlineKeyboardButton('𝐂𝐇𝐄𝐍𝐍𝐀𝐈', url='https://t.me/mallmovieup')
             ],[
-            InlineKeyboardButton('𝐇𝐞𝐥𝐩', callback_data='help'),
+            InlineKeyboardButton('𝙒𝙀𝘽 𝙎𝙀𝙍𝙄𝙀𝙎', url='https://t.me/malluwebseriesd'),
             InlineKeyboardButton('𝐀𝐛𝐨𝐮𝐭', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
