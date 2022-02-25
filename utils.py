@@ -160,7 +160,8 @@ async def search_gagala(text):
         }
     text = text.replace(" ", '+')
     reply_markup = InlineKeyboardMarkup([[
-    InlineKeyboardButton("🎗️ 𝚂𝙴𝙰𝚁𝙲𝙷 𝙾𝙽 𝙶𝙾𝙾𝙶𝙻𝙴 🎗️",url = f'https://www.google.com/search?q={text}'
+    InlineKeyboardButton("🎗️ 𝚂𝙴𝙰𝚁𝙲𝙷 𝙾𝙽 𝙶𝙾𝙾𝙶𝙻𝙴 🎗️", url=f'https://www.google.com/search?q={text}")‚
+    ]‚
     response = requests.get(url, headers=usr_agent)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, 'html.parser')
