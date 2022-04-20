@@ -37,13 +37,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚜️ 𝐉𝐎𝐈𝐍 𝐌𝐄 𝐓𝐎 𝐁𝐎𝐓 𝐆𝐑𝐎𝐔𝐏 ⚜️', url='https://t.me/mallu_movie_search')
+            InlineKeyboardButton('⚚ J̳O̳I̳N̳ ̳T̳O̳ ̳B̳O̳T̳ ̳G̳R̳O̳U̳P̳ ⚚', url='https://t.me/mallu_movie_search')
             ],[
-            InlineKeyboardButton('𝐑𝐄𝐋𝐄𝐀𝐒𝐄', url='https://t.me/+RnQCwI5msYdjZTZl'),
-            InlineKeyboardButton('𝐂𝐇𝐄𝐍𝐍𝐀𝐈', url='https://t.me/mallmovieup')
+            InlineKeyboardButton('💠 𝐑𝐄𝐋𝐄𝐀𝐒𝐄 💠', url='https://t.me/+RnQCwI5msYdjZTZl'),
+            InlineKeyboardButton('💠 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 💠', url='https://t.me/mallmovieup')
+            ],[      
+            InlineKeyboardButton('♻️ ᕼEᒪᑭ ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ 𝙼𝙰𝚂𝚃𝙴𝚁 ♻️', url='https://t.me/mr_bean_12')
             ],[
-            InlineKeyboardButton('𝙒𝙀𝘽 𝙎𝙀𝙍𝙄𝙀𝙎', url='https://t.me/malluwebseriesd'),
-            InlineKeyboardButton('🧑‍💻𝐌𝐀𝐒𝐓𝐄𝐑', url='https://t.me/mr_bean_12')
+            InlineKeyboardButton('⚜️ 𝙒𝙀𝘽 𝙎𝙀𝙍𝙄𝙀𝙎 ⚜️', url='https://t.me/malluwebseriesd')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -78,13 +80,15 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⚜️ 𝐉𝐎𝐈𝐍 𝐌𝐄 𝐓𝐎 𝐁𝐎𝐓 𝐆𝐑𝐎𝐔𝐏 ⚜️', url='https://t.me/mallu_movie_search')
+            InlineKeyboardButton('⚚ J̳O̳I̳N̳ ̳T̳O̳ ̳B̳O̳T̳ ̳G̳R̳O̳U̳P̳ ⚚', url='https://t.me/mallu_movie_search')
             ],[
-            InlineKeyboardButton('𝐑𝐄𝐋𝐄𝐀𝐒𝐄', url='https://t.me/+RnQCwI5msYdjZTZl'),
-            InlineKeyboardButton('𝐂𝐇𝐄𝐍𝐍𝐀𝐈', url='https://t.me/mallmovieup')
+            InlineKeyboardButton('💠 𝐑𝐄𝐋𝐄𝐀𝐒𝐄 💠', url='https://t.me/+RnQCwI5msYdjZTZl'),
+            InlineKeyboardButton('💠 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 💠', url='https://t.me/mallmovieup')
+            ],[      
+            InlineKeyboardButton('♻️ ᕼEᒪᑭ ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ 𝙼𝙰𝚂𝚃𝙴𝚁 ♻️', url='https://t.me/mr_bean_12')
             ],[
-            InlineKeyboardButton('𝙒𝙀𝘽 𝙎𝙀𝙍𝙄𝙀𝙎', url='https://t.me/malluwebseriesd'),
-            InlineKeyboardButton('𝐀𝐛𝐨𝐮𝐭', callback_data='about')
+            InlineKeyboardButton('⚜️ 𝙒𝙀𝘽 𝙎𝙀𝙍𝙄𝙀𝙎 ⚜️', url='https://t.me/malluwebseriesd')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
