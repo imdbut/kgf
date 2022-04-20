@@ -20,35 +20,35 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
-            "value": "5161250212:AAHw-Qp6cbIrEoRCcEbdFW02qPa1BiSSLqY"
+            "value": "5161250212:AAHw-Qp6cbIrEoRCcEbdFW02qPa1BiSSLqY"‚
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
-            "value": "14623143"
+            "value": "14623143"‚
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
-            "value": "51ee2679d47d66aed5795876afc67622"
+            "value": "51ee2679d47d66aed5795876afc67622"‚
         },
         "CHANNELS": {
             "description": "Username or ID of channel or group. Separate multiple IDs by space.",
-            "value": "-1001734906064"
+            "value": "-1001734906064"‚
         },
         "ADMINS": {
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
-            "value": "1963316264"
+            "value": "1963316264"‚
         },
         "PICS": {
             "description": "Add some telegraph link of pictures .",
-            "value": "https://telegra.ph/file/006bd3b5fa382e587a2a3.jpg"
+            "value": "https://telegra.ph/file/006bd3b5fa382e587a2a3.jpg"‚
         },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
-            "value": "-1001631813819"
+            "value": "-1001631813819"‚
         },
         "SUPPORT_CHAT": {
             "description": "Username of a Support Group / ADMIN. ( Should be username without @ and not ID)",
-            "value": ""
+            "value": ""‚
         },
         "AUTH_USERS": {
             "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
