@@ -168,7 +168,7 @@ async def imdb_callback(bot: Client, query: CallbackQuery):
         await query.message.reply_photo(photo=imdb['poster'], caption=f"\n🎬 Movie:<a href={imdb['url']}>{imdb.get('title')}</a>\n🎭 Genres: {imdb.get('genres')}\n🗓 Year:<a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10\n🖋 StoryLine: <code>{imdb.get('plot')} </code>/n📤 UPLOAD: @MALLU_MOVIE_SEARCH", reply_markup=InlineKeyboardMarkup(btn))
         await query.message.delete()
     else:
-        await query.message.edit(f"\n🎬 Movie:<a href={imdb['url']}>{imdb.get('title')}</a>\n🎭 Genres: {imdb.get('genres')}\n🗓 Year:<a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10\n🖋 StoryLine: <code>{imdb.get('plot')} </code>/n📤 UPLOAD: @MALLU_MOVIE_SEARCH", reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
+        await query.message.edit(f"<b>🍿 TITILE :</b> <a href={url}>{title}</a> {year}\n<b>📍  LANGUAGE :</b> {languages}\n<b>📆 Release:</b> <a href={url}/releaseinfo>{release_date}</a>\n<b>🎭  GENRE :</b> {genres}\n<b>📀 Runtime:</b> <code>{runtime} minutes</code>\n<b>\n📤 UPLOAD: @MALLU_MOVIE_SEARCH", reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
     await query.answer()
         
 
